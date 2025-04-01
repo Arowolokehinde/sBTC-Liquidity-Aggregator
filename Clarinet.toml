@@ -1,0 +1,49 @@
+[project]
+name = 'sbtc-liquidity-aggregator'
+description = ''
+authors = []
+telemetry = true
+cache_dir = './.cache'
+requirements = []
+[contracts.amm-adapter_clar]
+path = 'contracts/amm-adapter_clar.clar'
+clarity_version = 3
+epoch = 3.1
+
+[contracts.flash-loan-vault_clar]
+path = 'contracts/flash-loan-vault_clar.clar'
+clarity_version = 3
+epoch = 3.1
+
+[contracts.lending-adapter_clar]
+path = 'contracts/lending-adapter_clar.clar'
+clarity_version = 3
+epoch = 3.1
+
+[contracts.liquidity-registry_clar]
+path = 'contracts/liquidity-registry_clar.clar'
+clarity_version = 3
+epoch = 3.1
+
+[contracts.liquidity-router_clar]
+path = 'contracts/liquidity-router_clar.clar'
+clarity_version = 3
+epoch = 3.1
+
+[contracts.sbtc-registry_clar]
+path = 'contracts/sbtc-registry_clar.clar'
+clarity_version = 3
+epoch = 3.1
+
+[contracts.sbtc-token_clar]
+path = 'contracts/sbtc-token_clar.clar'
+clarity_version = 3
+epoch = 3.1
+[repl.analysis]
+passes = ['check_checker']
+
+[repl.analysis.check_checker]
+strict = false
+trusted_sender = false
+trusted_caller = false
+callee_filter = false
